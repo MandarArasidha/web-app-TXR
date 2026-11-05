@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lenscase by Texra | Official Website</title>
+  <meta name="description" content="The official Lenscase website by Texra. A slim, hinged fabric case for sunglasses and everyday eyewear. Textured fabric, magnetic closure, soft velvet interior. Designed by Texra, made in India.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lenscase-texra.pages.dev/">
+  <!-- Link previews (WhatsApp, LinkedIn, Instagram, Google) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lenscase by Texra">
+  <meta property="og:title" content="Lenscase by Texra | Official Website">
+  <meta property="og:description" content="The official Lenscase website by Texra. A slim, hinged fabric case for sunglasses and everyday eyewear. Textured fabric, magnetic closure, soft velvet interior. Designed by Texra, made in India.">
+  <meta property="og:url" content="https://lenscase-texra.pages.dev/">
+  <meta property="og:image" content="https://lenscase-texra.pages.dev/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ecebe6">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <!-- Google Search Console: paste your verification tag here when it gives you one
+  <meta name="google-site-verification" content="PASTE_CODE_HERE"> -->
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://lenscase-texra.pages.dev/#org",
+      "name": "Texra",
+      "url": "https://lenscase-texra.pages.dev/",
+      "logo": "https://lenscase-texra.pages.dev/images/texra-logo.png",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenscase"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://lenscase-texra.pages.dev/#website",
+      "url": "https://lenscase-texra.pages.dev/",
+      "name": "Lenscase by Texra",
+      "alternateName": "Lenscase",
+      "publisher": {
+        "@id": "https://lenscase-texra.pages.dev/#org"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Lenscase",
+      "description": "A slim, hinged fabric eyewear case with magnetic closure and a soft velvet interior.",
+      "image": "https://lenscase-texra.pages.dev/images/og-image.jpg",
+      "url": "https://lenscase-texra.pages.dev/",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lenscase"
+      },
+      "manufacturer": {
+        "@id": "https://lenscase-texra.pages.dev/#org"
+      },
+      "material": "Textured fabric",
+      "color": [
+        "Concrete Grey",
+        "Urban Violet",
+        "Sand Beige"
+      ]
+    }
+  ]
+}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER: logo left, navigation right ========== -->
+  <header class="site-header">
+    <!-- To use an image logo, replace the text with: <img src="images/logo.svg" alt="Lenscase" height="28"> -->
+    <a href="#home" class="logo">lenscase</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#intent">Intent</a>
+      <a href="#featured">Featured In</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== LEVEL 1: HOME (text + sliding banner) ========== -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <!-- EDIT: to change the logo, replace images/texra-logo.png (keep the name) -->
+        <h1 class="hero-logo"><img src="images/texra-logo.png" alt="Lenscase by Texra" width="404" height="245"></h1>
+        <!-- EDIT: your 1-2 sentences -->
+        <p class="lead">A slim, hinged fabric case for sunglasses and everyday eyewear.</p>
+        <div class="controls">
+          <button class="arrow" id="prev" aria-label="Previous slide">&#8592;</button>
+          <button class="arrow" id="next" aria-label="Next slide">&#8594;</button>
+          <div class="dots" id="dots"></div>
+        </div>
+      </div>
+
+      <!-- EDIT: add or remove slides by copying one <div class="slide"> -->
+      <div class="slider" id="slider">
+        <div class="track" id="track">
+          <div class="slide"><img src="images/hero-1.webp" alt="Man holding a violet Lenscase and sunglasses" width="1414" height="2000"></div>
+          <div class="slide"><img src="images/hero-2.webp" alt="Woman in a taupe suit holding a violet Lenscase" width="864" height="1184"></div>
+          <div class="slide"><img src="images/hero-3.webp" alt="Model holding a Lenscase in front of her face" width="928" height="1120"></div>
+          <div class="slide"><img src="images/hero-6.webp" alt="Two people holding eyewear and a sand beige Lenscase" width="928" height="1120"></div>
+          <div class="slide"><img src="images/hero-4.webp" alt="Woman in a red dress holding a sand beige Lenscase" width="1273" height="1800"></div>
+          <div class="slide"><img src="images/hero-8.webp" alt="A collection of eyewear frames laid out on a white table" width="1414" height="2000"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURE STRIP: logos that shift as you scroll ========== -->
+    <section class="marquee" id="marquee" aria-hidden="true">
+      <div class="row row-a"></div>
+      <div class="row row-b"></div>
+    </section>
+
+    <!-- ========== LEVEL 2: INTENT (one-liner, how it works, specifications, videos) ========== -->
+    <section id="intent" class="section intent">
+      <p class="eyebrow">Intent</p>
+      <!-- EDIT: the Intent title -->
+      <h2 class="intent-title">Built to fit the hand. Designed to outlast the trend.</h2>
+      <!-- Spare quotes you can reuse:
+           A case should protect what you wear on your face and still feel good in your hand.
+           Good design disappears into the day. Edit this quote. -->
+
+      <!-- How it works: three ticks. EDIT the text -->
+      <h3 class="sub">How Lenscase works</h3>
+      <ul class="ticks">
+        <li>
+          <img class="step-icon" src="images/step-1-one-hand.png" alt="Hand holding a Lenscase and pressing it to open" width="253" height="400" loading="lazy">
+          <div>
+            <h4>Open with one hand</h4>
+            <p>Hold it in one hand and press gently.</p>
+          </div>
+        </li>
+        <li>
+          <img class="step-icon" src="images/step-2-eyewear.png" alt="Glasses placed upside down inside the case" width="400" height="143" loading="lazy">
+          <div>
+            <h4>Place your eyewear upside down</h4>
+            <p>Lay your glasses in, upside down, so the frame rests inside.</p>
+          </div>
+        </li>
+        <li>
+          <img class="step-icon" src="images/step-3-carry.png" alt="Hand carrying the closed Lenscase" width="268" height="221" loading="lazy">
+          <div>
+            <h4>Close and carry</h4>
+            <p>Close it with a magnetic click and carry as you like.</p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Specifications: add rows by copying a <div> pair -->
+      <h3 class="sub">Specifications</h3>
+      <div class="specs">
+        <picture>
+          <source media="(max-width: 800px)" srcset="images/spec-crop.webp">
+          <img src="images/product-colours.webp" alt="Lenscase colour range" loading="lazy" width="1414" height="2000">
+        </picture>
+        <dl>
+          <div><dt>Material</dt><dd>Textured fabric (leather &ndash; coming up)</dd></div>
+          <div><dt>Mechanism</dt><dd>Hinge, magnetic closure</dd></div>
+          <div><dt>Fits</dt><dd>Sunglasses and standard eyewear</dd></div>
+          <div><dt>Dimensions</dt><dd>170 &times; 70 &times; 40 mm &ndash; Sunglasses case<br>160 &times; 60 &times; 35 mm &ndash; Compact glasses case</dd></div>
+          <div><dt>Interior</dt><dd>Soft velvet</dd></div>
+          <div><dt>Colours</dt><dd>Concrete Grey, Urban Violet, Sand Beige, Bottle Green (coming up)</dd></div>
+          <div><dt>Weight</dt><dd>100 g</dd></div>
+        </dl>
+      </div>
+
+      <!-- Videos (square). To replace one, swap the file in the videos/ folder (keep the name) -->
+      <h3 class="sub">Watch it in action</h3>
+      <div class="videos">
+        <figure class="video-card" id="video-unboxing">
+          <div class="video-frame">
+            <video autoplay muted loop playsinline webkit-playsinline preload="auto" poster="images/unboxing-poster.webp" data-mobile="videos/unboxing-mobile.mp4">
+              <source src="videos/unboxing.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption>Unboxing</figcaption>
+        </figure>
+        <figure class="video-card" id="video-overview">
+          <div class="video-frame">
+            <video autoplay muted loop playsinline webkit-playsinline preload="auto" poster="images/overview-poster.webp" data-mobile="videos/overview-mobile.mp4">
+              <source src="videos/overview.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption>Product overview</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== LEVEL 3: FEATURED IN (partner logos over a dimmed background image) ========== -->
+    <section id="featured" class="featured">
+      <!-- To change the background, replace images/featured-bg.webp (keep the name) -->
+      <img class="featured-bg" src="images/featured-bg.webp" alt="" aria-hidden="true" loading="lazy" width="2000" height="1868">
+      <div class="featured-inner">
+        <h2>Featured In</h2>
+        <!-- To add a logo: copy a <li>. To make it clickable: <a href="https://site.com"><img ...></a> -->
+        <ul class="partners">
+          <li><img src="images/partner-eyesmart.png" alt="EyeSmart" width="510" height="200" loading="lazy"></li>
+          <li><img src="images/partner-eyewear-project.png" alt="The Eyewear Project" width="600" height="156" loading="lazy"></li>
+          <li><img src="images/partner-been-there-done-that.png" alt="Been There Done That" width="600" height="159" loading="lazy"></li>
+          <li><img src="images/partner-mit-design.png" alt="MIT Institute of Design" width="600" height="189" loading="lazy"></li>
+          <li><img src="images/partner-brown-living.png" alt="Brown Living" width="359" height="117" loading="lazy"></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="logo">lenscase</span>
+      <small>&copy; <span id="year"></span> Lenscase by Texra. All rights reserved.</small>
+    </div>
+    <!-- IP India badge (display only) -->
+    <div class="ip-badge">
+      <img src="images/ip-india-logo.png" alt="Intellectual Property India" width="488" height="360">
+      <span>Registered design<br><b>No. 417332-001</b></span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

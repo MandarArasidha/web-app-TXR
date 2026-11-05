@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lenscase-texra.pages.dev/sitemap.xml
